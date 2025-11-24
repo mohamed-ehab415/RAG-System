@@ -32,4 +32,29 @@ $ pip install -r requirements.txt
 $ cp .env.example .env
 ```
 
+## Run Docker Compose Services
+
+```bash
+$ cd docker
+$ cp .env.example .env
+```
+
+- update `.env` with your credentials
+
+
+
+```bash
+$ cd docker
+$ sudo docker compose up -d
+```
+
 Set your environment variables in the `.env` file. Like `GROQ_API_KEY` value.
+## Run the FastAPI server
+
+```bash
+$ uvicorn main:app --reload --host 0.0.0.0 --port 5000
+```
+
+## POSTMAN Collection
+
+Download the POSTMAN collection from [/assets\first.postman_collection.json](/assets\first.postman_collection.json)
